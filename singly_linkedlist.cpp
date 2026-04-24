@@ -69,4 +69,16 @@ public:
         }
         return (*current != NULL);
     }
+
+    bool delNode(int nim)
+    {
+        Node *previous, *current;
+        if (!Search(nim, &previous, &current))
+            return false;
+        else
+            previous->next = current->next;
+
+        delete current;
+        return true;
+    }
 }
