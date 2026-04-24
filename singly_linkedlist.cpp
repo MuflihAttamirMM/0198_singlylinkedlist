@@ -28,7 +28,7 @@ public:
         if (START == NULL || nim <= START->noMhs) {
             if ((START != NULL) && (nim == START->noMhs)) {
                 cout << "\nDuplikasi noMhs tidak diizinkan\n" << endl;
-                delete nodeBaru; // Hapus alokasi jika batal
+                delete nodeBaru;
                 return;
             }
             nodeBaru->next = START;
@@ -72,7 +72,7 @@ public:
             return false;
         }
 
-        if (current == START) { // Jika yang dihapus adalah node pertama
+        if (current == START) { 
             START = START->next;
         } else {
             previous->next = current->next;
