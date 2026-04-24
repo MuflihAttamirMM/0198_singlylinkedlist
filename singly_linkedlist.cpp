@@ -152,5 +152,4 @@ int main() {
                 break;
         }
     } while (ch != '5');
-    return 0;
 }
