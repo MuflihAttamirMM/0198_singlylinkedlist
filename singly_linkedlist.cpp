@@ -100,4 +100,46 @@ public:
             cout << endl;
         }
     }
+int main()
+{
+    LinkedList mhs;
+    int nim;
+    char ch;
+    do
+    {
+        cout << endl;
+             << "Menu";
+        cout << endl;
+             << "1. Menambah data jedalam list" << endl;
+        cout << "2 Menghapus data dari dalam list" << endl;
+        cout << "3. Menampilkan semua data didalam list" << endl;
+        cout << "4. Menampilkan semya data didalam list secara terbalik" << endl;
+        cout << "5. Mencari data dalam list" << endl;
+        cout << "6. Keluar" << endl;
+        cout << "\nMasukkan pilihan (1-6): ";
+        cin >> ch;
+        switch (ch)
+        {
+                mhs.addNode();
+        }
+        break;
+
+        case '2':
+            if (mhs.listEmpty())
+            {
+                cout << endl;
+                     << "List Kosong" << endl;
+                break;
+            }
+            cout << endl;
+                 << "Masukkan nomor induk mahasiswa yang akan dihapus: ";
+            cin >> nim;
+            if (mhs.delNode(nim) == false)
+                cout << endl;
+                     << "Data tidak ditemukan" << endl;
+            else
+                cout << endl;
+                     << "Data dengan nomor induk mahasiswa " << nim << " berhasil dihapus" << endl;
+    }
+}
 }
