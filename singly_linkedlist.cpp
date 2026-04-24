@@ -140,6 +140,19 @@ int main()
             else
                 cout << endl;
                      << "Data dengan nomor induk mahasiswa " << nim << " berhasil dihapus" << endl;
-    }
+      }
+      break;
+      case '3':
+      {
+        mhs.traverse();
+      }
+      break;
+      case '4':
+      {
+        if (mhs.listEmpty()== true)
+        {
+            cout << "\nlist kosong\n";
+        }
+      }
 }
 }
